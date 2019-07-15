@@ -1,0 +1,41 @@
+{
+  "name": "web-02",
+  "version": "1.0.0",
+  "description": "Web UI 02",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --hot --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "antd": "^3.19.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.0",
+    "rc-tabs": "^9.6.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-split-pane": "^0.1.87",
+    "redux": "^4.0.1",
+    "webpack": "^4.32.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "antd-scss-theme-plugin": "^1.0.7",
+    "css-loader": "^3.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "react-redux": "^7.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.3.2"
+  }
+}

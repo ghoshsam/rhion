@@ -1,0 +1,10 @@
+{
+  "customers": [
+    {
+      "Name": "<%=name%>"
+    },
+    {
+      "Name": "Test"
+    }
+  ]
+}
