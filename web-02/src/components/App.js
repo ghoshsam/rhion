@@ -7,21 +7,22 @@ import { Provider } from "react-redux";
 import { LeftMenu } from "./layout";
 import SplitPane from "react-split-pane";
 //import TabContainer from "./Tabs";
-import { TabCon } from "./Tabs";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { TabCon, TabLayout } from "./Tabs";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import "../theme.less";
 const { Header, Content, Footer, Sider } = Layout;
 
 import Tab1 from "./Tabs/Tab1";
+import Tab2 from "./Tabs/Tab2";
 import { object } from "prop-types";
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     const tabPanes = [
-      { title: "Tab 1", content: Tab1, key: "0" },
-      { title: "Tab 2", content: Tab1, key: "1" },
-      { title: "Tab 3", content: Tab1, key: "2" }
+      { title: "Tab 1", component: Tab1, key: "0" },
+      { title: "Tab 2", component: Tab1, key: "1" },
+      { title: "Tab 3", component: Tab1, key: "2" }
     ];
     this.state = {
       activeKey: tabPanes[0].key,
@@ -37,7 +38,13 @@ export default class App extends React.Component {
             <Sider width={200} theme="light">
               <LeftMenu />
             </Sider>
-            <TabCon tabs={this.state.tabPanes} />
+            {/* <TabCon tabs={this.state.tabPanes} /> */}
+            <Tabs>
+              <Switch>
+                <TabLayout path="/w1" tab="w1" key="w1" component={Tab1} />
+                <TabLayout path="/w2" tab="w2" key="w2" component={Tab2} />
+              </Switch>
+            </Tabs>
           </Layout>
           <Footer />
         </Layout>

@@ -1,0 +1,20 @@
+{
+  "name": "pipeeditor",
+  "version": "1.0.0",
+  "description": "Pipe Flow Designer ",
+  "main": "editor.js",
+  "scripts": {
+    "start": "nodemon editor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "gojs": "^1.8.19",
+    "jquery": "^3.3.1",
+    "nodemon": "^1.17.5"
+  }
+}

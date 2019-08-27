@@ -8,10 +8,11 @@ const TabRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={matchProps => (
-        <TabPane {matchProps.title}>
-          <Component {...matchProps} />
+        <TabPane {...matchProps.title}>
+          <component {...matchProps} />
         </TabPane>
       )}
     />
   );
 };
+export default TabRoute;

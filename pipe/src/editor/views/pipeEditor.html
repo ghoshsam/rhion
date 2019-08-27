@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pipe Editor</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="/public/css/editor.css" >
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Logo</a>       
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div id="pipe_1" class="row pipe_1">
+            <div id="pipe_palette_1" class="col-2 border border-info">
+                col-3
+            </div>
+            <div id="pipe_view_1" class="col-8 border border-primary" style="min-height:500px;" ></div>
+            <div id="pipe_view_1" class="col-2 border border-primary" style="min-height:500px;" ></div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="console" style="height:70px; overflow-y:scroll"></div>
+        </div>
+    </div> 
+    <!--<script src="/d3/d3.js"></script>
+    <script src="/editor/aip.js"></script>
+    <script src="/editor/viewd3.js"></script> style="height:600px;border:1px soli red;"-->
+    <script src="/jquery/jquery.js"></script>
+    <script src="/public/js/vendor/gojs/go-debug.js"></script>
+    <script src="/editor/pipeeditorview.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</html>
